@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CybrOps Security Specialists</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 20px;
+      background: #0d1117;
+      color: #e6edf3;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 30px;
+      background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    h1 {
+      margin: 10px 0;
+      font-size: 2.5em;
+      color: #58a6ff;
+      text-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+    }
+    .subtitle {
+      font-style: italic;
+      opacity: 0.8;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .tagline {
+      font-size: 1.2em;
+      color: #8b949e;
+    }
+    .roles-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .role-card {
+      background: linear-gradient(145deg, #161b22 0%, #0d1117 100%);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      flex: 1 1 calc(33.333% - 20px);
+      padding: 25px;
+      box-sizing: border-box;
+      text-align: center;
+      min-width: 280px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid #21262d;
+    }
+    .role-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      border-color: #58a6ff;
+    }
+    .role-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #30363d;
+      box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+    }
+    .role-name {
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-top: 15px;
+      color: #58a6ff;
+    }
+    .role-title {
+      font-style: italic;
+      color: #8b949e;
+      margin-bottom: 15px;
+    }
+    .role-quirks {
+      margin: 15px 0 0;
+      font-size: 0.95em;
+      color: #c9d1d9;
+      line-height: 1.5;
+      text-align: center;
+      background: rgba(22, 27, 34, 0.7);
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .section-title {
+      text-align: center;
+      margin: 50px 0 20px;
+      color: #58a6ff;
+      font-size: 1.8em;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      border-top: 1px solid #21262d;
+      font-size: 0.9em;
+      color: #8b949e;
+    }
+    .disclaimer {
+      font-size: 0.85em;
+      margin-top: 10px;
+      font-style: italic;
+    }
+    .blinking {
+      animation: blink 2s infinite;
+      display: inline-block;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .cybr-badge {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #238636;
+      color: white;
+      border-radius: 4px;
+      margin: 0 5px;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+    .red-badge {
+      background: #da3633;
+    }
+    .blue-badge {
+      background: #1f6feb;
+    }
+    .testimonials {
+      margin: 40px 0;
+      padding: 20px;
+      background: rgba(22, 27, 34, 0.5);
+      border-radius: 10px;
+      border: 1px solid #30363d;
+    }
+    .testimonial {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: rgba(13, 17, 23, 0.7);
+      border-radius: 8px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      text-align: right;
+      margin-top: 10px;
+      font-style: normal;
+      font-weight: bold;
+      color: #58a6ff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><span class="blinking">[</span> CybrOps Security Specialists <span class="blinking">]</span></h1>
+    <div class="subtitle">Established 2020 | <span class="cybr-badge">ISO 27001</span> <span class="cybr-badge blue-badge">SOC2</span> <span class="cybr-badge red-badge">24/7 Support</span></div>
+    <p class="tagline">Six elite security specialists... who just happen to look very similar.</p>
+  </header>
+
+  <section>
+    <div class="section-title">The Offensive Security Team</div>
+    <div class="roles-container">
+      <!-- Adrian's roles -->
+      <div class="role-card">
+        <img src="https://i.ibb.co/Kz2Ywd0h/a1.png" alt="Adrian Keychain" border="0" />
+        <div class="role-name">Adrian Keychain</div>
+        <div class="role-title">CEO & Chief Encryption Officer</div>
+        <div class="role-quirks">
+          <strong>Signature Move:</strong> Dramatically yells "256-bit AES or bust!" in every meeting.
+        </div>
+      </div>
+
+      <div class="role-card">
+        <img src="https://i.ibb.co/GQbSCR18/a2.png" alt="Adrian FireWall" border="0" />
+        <div class="role-name">Adrian FireWall</div>
+        <div class="role-title">CTO & Cyber Tactics Officer</div>
+        <div class="role-quirks">
+          <strong>Signature Move:</strong> Sets off the building's fire alarm while "stress-testing the firewall."
+        </div>
+      </div>
+
+      <div class="role-card">
+        <img src="https://i.ibb.co/FLjmXcVS/a3.png" alt="Adrian Phishington" border="0" />
+        <div class="role-name">Adrian Phishington</div>
+        <div class="role-title">VP of Social Engineering</div>
+        <div class="role-quirks">
+          <strong>Signature Move:</strong> Sends sneaky emails about "urgent lunch surveys" to test vigilance.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">The Defensive Security Team</div>
+    <div class="roles-container">
+      <!-- Cristi's roles -->
+      <div class="role-card">
+        <img src="https://i.ibb.co/vCD6KBDg/c1.png" alt="Cristi Bruteforce" border="0" />
+        <div class="role-name">Cristi Bruteforce</div>
+        <div class="role-title">Chief Pentesting Officer</div>
+        <div class="role-quirks">
+          <strong>Signature Move:</strong> Claims he can guess your password from the way you stir your coffee.
+        </div>
+      </div>
+
+      <div class="role-card">
+        <img src="https://i.ibb.co/396tyHyW/c2.png" alt="Cristi Virusbane" border="0" />
+        <div class="role-name">Cristi Virusbane</div>
+        <div class="role-title">Director of Threat Elimination</div>
+        <div class="role-quirks">
+          <strong>Signature Move:</strong> Wields a foam "Malware Eradicator 3000" flamethrower during presentations.
+        </div>
+      </div>
+
+      <div class="role-card">
+        <img src="https://i.ibb.co/3YcGd9Tm/c3.png" alt="Cristi Ransomware" border="0" />
+        <div class="role-name">Cristi Ransomware</div>
+        <div class="role-title">Head of Crypto Crime Analysis</div>
+        <div class="role-quirks">
+          <strong>Signature Move:</strong> Hands out "ransom notes" demanding donuts before starting work.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="section-title">What Our Clients Say</div>
+    <div class="testimonial">
+      "I could have sworn there were at least eight different security experts working on our project, but somehow they were never in the same room at the same time..."
+      <div class="testimonial-author">- Confused Banking Client</div>
+    </div>
+    <div class="testimonial">
+      "Their Head of Malware Analysis identified a critical threat in our systems. Later that day, their CEO personally helped implement the fix. They looked suspiciously similar but both assured me they were different people."
+      <div class="testimonial-author">- Impressed Tech Startup</div>
+    </div>
+    <div class="testimonial">
+      "I scheduled back-to-back meetings with four different specialists at CybrOps. Each one needed 'exactly 10 minutes to change' before our meeting. Excellent security services though!"
+      <div class="testimonial-author">- Observant Enterprise Client</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CybrOps Security Specialists</p>
+    <p>Defending your digital assets with six experts who somehow all use the same two parking spaces.</p>
+    <p class="disclaimer">Any resemblance to a company actually run by just Adrian and Cristi frantically changing outfits is purely coincidental.</p>
+  </footer>
+</body>
+</html>
